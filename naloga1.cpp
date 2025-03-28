@@ -4,6 +4,8 @@
 #include <vector>
 #include <sstream>
 using namespace std;
+
+// Bere stevila iz datoteke primer_vhoda.txt
 bool Branje_Stevil(vector<int> &vec, const char s[]) {
     ifstream input(s);
     int st;
@@ -22,7 +24,7 @@ bool Branje_Stevil(vector<int> &vec, const char s[]) {
     return true;
 }
 
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) { // Kako zaženemo program v konzoli
     if (argc != 2) {
         cerr << "Uporaba: " << argv[0] << " <vhodna_datoteka>" << endl;
         return 1;
