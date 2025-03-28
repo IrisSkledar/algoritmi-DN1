@@ -14,7 +14,7 @@ void Izpis_Stevil(int* polje, unsigned int velikost) {
 }
 
 int getBit(unsigned char num, int k) {
-
+    return (num >> k) & 1;
 }
 
 void countingSortByBit(vector<unsigned char>& A, int k) {
