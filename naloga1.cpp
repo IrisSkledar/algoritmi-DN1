@@ -12,7 +12,7 @@ bool Branje_Stevil(vector<int> &vec, const char s[]) {
 void Izpis_Stevil(int* polje, unsigned int velikost) {
 
 }
-
+// Funkcija za pridobitev k-tega bita (k = 0 najmanj pomemben bit)
 int getBit(unsigned char num, int k) {
     return (num >> k) & 1;
 }
