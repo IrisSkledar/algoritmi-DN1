@@ -47,6 +47,12 @@ int main(int argc, char* argv[]) { // Kako zaženemo program v konzoli
         cerr << "Uporaba: " << argv[0] << " <vhodna_datoteka>" << endl;
         return 1;
     }
+// Branje števil v vektor int
+    vector<int> vnos;
+    if (!Branje_Stevil(vnos, argv[1])) {
+        cerr << "Napaka pri branju datoteke." << endl;
+        return 1;
+    }
 
     return 0;
 }
